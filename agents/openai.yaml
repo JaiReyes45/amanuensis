@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amanuensis"
+  short_description: "Investigate projects and maintain complete handoffs"
+  default_prompt: "Use $amanuensis to investigate this project and create or update its complete documentation with supporting evidence."

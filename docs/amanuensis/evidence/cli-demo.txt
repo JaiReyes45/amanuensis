@@ -1,0 +1,127 @@
+$ python scripts/amanuensis.py scan --root <temporary-fixture>
+{
+  "complete": true,
+  "fingerprint": "7a5cf89eb1ee2f111d82f1c28fd77bbc0b2d5002cd1a7bd32741c077eaa223f1",
+  "git": {
+    "commit": null,
+    "boundary": "filesystem"
+  },
+  "excluded": {},
+  "files": 2,
+  "baseline_exists": false,
+  "changes": {
+    "added": {
+      "count": 2,
+      "sample": [
+        "index.js",
+        "package.json"
+      ]
+    },
+    "modified": {
+      "count": 0,
+      "sample": []
+    },
+    "deleted": {
+      "count": 0,
+      "sample": []
+    }
+  },
+  "packages": [
+    {
+      "path": "package.json",
+      "ecosystem": "node",
+      "dependencies": [
+        "example-library"
+      ],
+      "script_names": [
+        "start"
+      ]
+    }
+  ],
+  "environment_keys": [],
+  "review_evidence_ids": [],
+  "warnings": [
+    "Git belongs to an ancestor; only the explicit filesystem boundary is used."
+  ],
+  "manifest": ".amanuensis/project-manifest.json"
+}
+Exit status: 0
+
+Prepared all required headings and evidence records; 11 gaps are intentional.
+
+$ python scripts/amanuensis.py validate --root <temporary-fixture>
+Documentation structure, evidence records, and local link targets passed. Content accuracy requires agent review.
+Exit status: 0
+
+$ python scripts/amanuensis.py checkpoint --root <temporary-fixture>
+{"checkpoint": "saved", "gaps": ["fixture-0", "fixture-2", "fixture-3", "fixture-4", "fixture-5", "fixture-6", "fixture-7", "fixture-8", "fixture-9", "fixture-10", "fixture-11"], "meaning": "Documentation baseline saved; gaps remain unverified."}
+Exit status: 0
+
+Changed index.js after the documented baseline.
+
+$ python scripts/amanuensis.py scan --root <temporary-fixture>
+{
+  "complete": true,
+  "fingerprint": "7bfa22caae627be19bd8a6268ee08016c16c5edf9efec0d0325a003ce73154df",
+  "git": {
+    "commit": null,
+    "boundary": "filesystem"
+  },
+  "excluded": {
+    "directories": 1,
+    "documentation_output": 1
+  },
+  "files": 2,
+  "baseline_exists": true,
+  "changes": {
+    "added": {
+      "count": 0,
+      "sample": []
+    },
+    "modified": {
+      "count": 1,
+      "sample": [
+        "index.js"
+      ]
+    },
+    "deleted": {
+      "count": 0,
+      "sample": []
+    }
+  },
+  "packages": [
+    {
+      "path": "package.json",
+      "ecosystem": "node",
+      "dependencies": [
+        "example-library"
+      ],
+      "script_names": [
+        "start"
+      ]
+    }
+  ],
+  "environment_keys": [],
+  "review_evidence_ids": [
+    "fixture-0",
+    "fixture-1",
+    "fixture-2",
+    "fixture-3",
+    "fixture-4",
+    "fixture-5",
+    "fixture-6",
+    "fixture-7",
+    "fixture-8",
+    "fixture-9",
+    "fixture-10",
+    "fixture-11"
+  ],
+  "warnings": [
+    "Git belongs to an ancestor; only the explicit filesystem boundary is used."
+  ],
+  "manifest": ".amanuensis/project-manifest.json"
+}
+Exit status: 0
+
+PASS: source modification detected and architecture evidence marked for review.
+Temporary fixture cleaned up; no project code was executed.

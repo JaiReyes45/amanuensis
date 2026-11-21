@@ -1,0 +1,18 @@
+test_ancestor_repository_is_not_used (test_amanuensis.AmanuensisTests.test_ancestor_repository_is_not_used) ... ok
+test_checkpoint_requires_document_and_evidence (test_amanuensis.AmanuensisTests.test_checkpoint_requires_document_and_evidence) ... ok
+test_checkpoint_tracks_add_modify_delete_and_keeps_pending_separate (test_amanuensis.AmanuensisTests.test_checkpoint_tracks_add_modify_delete_and_keeps_pending_separate) ... ok
+test_disappearing_entry_produces_incomplete_inventory (test_amanuensis.AmanuensisTests.test_disappearing_entry_produces_incomplete_inventory) ... ok
+test_incomplete_scan_cannot_be_checkpointed (test_amanuensis.AmanuensisTests.test_incomplete_scan_cannot_be_checkpointed) ... ok
+test_missing_media_and_path_escape_are_errors (test_amanuensis.AmanuensisTests.test_missing_media_and_path_escape_are_errors) ... ok
+test_observed_source_requires_a_real_project_file (test_amanuensis.AmanuensisTests.test_observed_source_requires_a_real_project_file) ... ok
+test_parentheses_in_valid_local_links (test_amanuensis.AmanuensisTests.test_parentheses_in_valid_local_links) ... ok
+test_project_exclusions_and_observed_evidence_freshness (test_amanuensis.AmanuensisTests.test_project_exclusions_and_observed_evidence_freshness) ... ok
+test_reparse_detection_and_observation_timestamps (test_amanuensis.AmanuensisTests.test_reparse_detection_and_observation_timestamps) ... ok
+test_scan_is_compact_and_excludes_secrets_generated_and_own_output (test_amanuensis.AmanuensisTests.test_scan_is_compact_and_excludes_secrets_generated_and_own_output) ... ok
+test_source_changed_after_scan_rejects_checkpoint (test_amanuensis.AmanuensisTests.test_source_changed_after_scan_rejects_checkpoint) ... ok
+test_symlinked_sources_are_not_followed (test_amanuensis.AmanuensisTests.test_symlinked_sources_are_not_followed) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 23.805s
+
+OK

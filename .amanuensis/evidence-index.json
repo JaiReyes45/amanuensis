@@ -1,0 +1,259 @@
+{
+    "schema_version":  1,
+    "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+    "items":  [
+                  {
+                      "id":  "overview-source",
+                      "section":  "Overview",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Amanuensis consists of agent guidance and a standalone Python CLI; the concept note states the original broader ambition.",
+                      "sources":  [
+                                      "SKILL.md",
+                                      "scripts/amanuensis.py",
+                                      "The scriber and clerk you are looking for..md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "architecture-source",
+                      "section":  "Architecture",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Traced main, collect, scan, validate, checkpoint and the separation between host investigation and local CLI persistence.",
+                      "sources":  [
+                                      "scripts/amanuensis.py",
+                                      "SKILL.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "repository-map-source",
+                      "section":  "Repository map",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Reviewed ten inventoried source files, including the GitHub README and its documentation link.",
+                      "sources":  [
+                                      "SKILL.md",
+                                      "scripts/amanuensis.py",
+                                      "agents/openai.yaml",
+                                      "tests/test_amanuensis.py",
+                                      "references/documentation.md",
+                                      "references/evidence.md",
+                                      "references/scanner.md",
+                                      ".gitignore",
+                                      "README.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "setup-source",
+                      "section":  "Setup and configuration",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Python standard-library imports, CLI arguments, ignore pattern parser, metadata size threshold and scan limits inspected.",
+                      "sources":  [
+                                      "scripts/amanuensis.py",
+                                      "references/scanner.md",
+                                      "agents/openai.yaml"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "operation-cli",
+                      "section":  "Operation and deployment",
+                      "status":  "observed",
+                      "kind":  "runtime",
+                      "summary":  "Executed scan, validation, checkpoint and post-change rescan in a disposable fixture; all commands exited 0 and change detection assertions passed.",
+                      "procedure":  "From the Amanuensis root on Windows 11/Python 3.13.5, ran python docs/amanuensis/demos/cli-demo.py. Fixture source was never executed. Output captured; fixture cleaned up normally. Parent Git metadata was rejected. No publication attempted.",
+                      "sources":  [
+                                      "scripts/amanuensis.py"
+                                  ],
+                      "assets":  [
+                                     "docs/amanuensis/demos/cli-demo.py",
+                                     "docs/amanuensis/evidence/cli-demo.txt"
+                                 ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "features-source",
+                      "section":  "Features and workflows",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Confirmed three CLI commands, host-defined documentation depths, metadata extraction and evidence-review heuristics. No bundled GitHub publisher or background scheduler found in the inspected implementation.",
+                      "sources":  [
+                                      "SKILL.md",
+                                      "scripts/amanuensis.py",
+                                      "references/evidence.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "walkthrough-transcript",
+                      "section":  "Visual walkthrough",
+                      "status":  "observed",
+                      "kind":  "runtime",
+                      "summary":  "Opened actual CLI transcript and reviewed inventory, validation success, checkpoint gaps and modified index.js result. Text evidence is appropriate to this CLI surface; no screenshots fabricated.",
+                      "procedure":  "Ran the disposable demo from project root on Windows 11/Python 3.13.5, exit 0. Read docs/amanuensis/evidence/cli-demo.txt in full after the interruption. Captured root paths use a temporary-fixture placeholder; fixture inputs are synthetic.",
+                      "sources":  [
+                                      "scripts/amanuensis.py"
+                                  ],
+                      "assets":  [
+                                     "docs/amanuensis/evidence/cli-demo.txt"
+                                 ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "demo-executed",
+                      "section":  "Demo",
+                      "status":  "observed",
+                      "kind":  "runtime",
+                      "summary":  "Full CLI lifecycle demo executed successfully; eleven fixture documentation gaps were intentional and preserved at checkpoint.",
+                      "procedure":  "python docs/amanuensis/demos/cli-demo.py, working directory project root, Windows 11/Python 3.13.5. Exit 0. Final PASS states source modification detected and architecture evidence marked for review; temporary fixture cleaned up.",
+                      "sources":  [
+                                      "scripts/amanuensis.py"
+                                  ],
+                      "assets":  [
+                                     "docs/amanuensis/demos/cli-demo.py",
+                                     "docs/amanuensis/evidence/cli-demo.txt"
+                                 ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "user-handoff-source",
+                      "section":  "User handoff",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Invocation, required host capabilities, update process and disclosure of incomplete runtime evidence follow the installed skill contract.",
+                      "sources":  [
+                                      "SKILL.md",
+                                      "agents/openai.yaml",
+                                      "references/evidence.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "developer-tests",
+                      "section":  "Developer handoff",
+                      "status":  "observed",
+                      "kind":  "runtime",
+                      "summary":  "All 13 unittest cases passed, including scoped Git, exclusions, checkpoint freshness, media/link handling and filesystem edge cases.",
+                      "procedure":  "python -m unittest discover -s tests -v from project root, Windows 11/Python 3.13.5. Output: Ran 13 tests in 23.805s; OK. No skipped tests reported. Test fixture project code and network services are not executed.",
+                      "sources":  [
+                                      "tests/test_amanuensis.py",
+                                      "scripts/amanuensis.py"
+                                  ],
+                      "assets":  [
+                                     "docs/amanuensis/evidence/tests.txt"
+                                 ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "limitations-source",
+                      "section":  "Troubleshooting and limitations",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Confirmed heuristic exclusions, limited Markdown checks, conservative evidence invalidation, absence of locking, and .amanuensis exclusion in the project\u0027s .gitignore.",
+                      "sources":  [
+                                      "scripts/amanuensis.py",
+                                      ".gitignore",
+                                      "references/scanner.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "freshness-source",
+                      "section":  "Evidence and freshness",
+                      "status":  "observed",
+                      "kind":  "source",
+                      "summary":  "Reviewed observations against the ten-file publication inventory based on source commit 95bfc2249d6557549e1fccbdcd1b015bead8c2c1; README edits are included in the working-tree fingerprint.",
+                      "sources":  [
+                                      "scripts/amanuensis.py",
+                                      "references/evidence.md"
+                                  ],
+                      "observed_at":  "2026-11-21T10:58:02.934786+00:00",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "reviewed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "reused_from_fingerprint":  "a9740e22671a7e7a2e9a06b1e889cec9467fe8dd65f1e961d31d43b265b6bd38",
+                      "reuse_basis":  "Verified source files match the original authoring directory; publication adds README and its documentation link. Existing CLI fixture evidence remains representative. Full test suite was also rerun in the publication checkout: 13 passed."
+                  },
+                  {
+                      "id":  "cross-platform-gap",
+                      "section":  "Developer handoff",
+                      "status":  "unavailable",
+                      "summary":  "Python 3.11 and non-Windows execution were not tested; run the suite on those platforms before claiming portability."
+                  },
+                  {
+                      "id":  "external-app-gap",
+                      "section":  "Demo",
+                      "status":  "unavailable",
+                      "summary":  "This is a CLI fixture demonstration, not a verified investigation of an external running app. Evaluate a representative application to establish that coverage."
+                  },
+                  {
+                      "id":  "token-benchmark-gap",
+                      "section":  "Overview",
+                      "status":  "unavailable",
+                      "summary":  "No equivalent-quality token usage benchmark was run. Compare first-run and update usage against an ordinary agent request."
+                  },
+                  {
+                      "id":  "github-source-publication",
+                      "section":  "Operation and deployment",
+                      "status":  "observed",
+                      "summary":  "Created private JaiReyes45/amanuensis and pushed scoped skill source to main. Documentation is prepared on codex/project-documentation for a separate PR.",
+                      "input_fingerprint":  "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+                      "procedure":  "gh repo create JaiReyes45/amanuensis --private --add-readme succeeded; verified GitHub remote and exact checkout root; authenticated git push origin main succeeded with source commit 95bfc2249d6557549e1fccbdcd1b015bead8c2c1. No ancestor repository staged or pushed.",
+                      "observed_at":  "2026-11-21T12:35:44.8272572Z",
+                      "kind":  "runtime"
+                  },
+                  {
+                      "id":  "rendered-preview-gap",
+                      "section":  "Visual walkthrough",
+                      "status":  "unavailable",
+                      "summary":  "No rendered Markdown preview was available; source structure and actual text transcripts were reviewed. No browser-rendered visual QA is claimed."
+                  }
+              ]
+}

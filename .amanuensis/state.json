@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "documented_at": "2026-11-21T12:35:45.943640+00:00",
+  "fingerprint": "1f7ae02df81e620132e6d26646570089977e581de6d7af373a43ef6e3a80120f",
+  "git": {
+    "commit": "95bfc2249d6557549e1fccbdcd1b015bead8c2c1",
+    "boundary": "repository"
+  },
+  "hashes": {
+    ".gitignore": "afe1370b1d45dd87f660dd428146f3479f36243adcf2e0af31f49fe119d52484",
+    "README.md": "7313ca8f42e94fe00d6e02e4c01c0be70a5a0fe8b3bb8f4c5abdb758f0c3bc49",
+    "SKILL.md": "a727d9bec38562be946db7e7cebec1af07d6382ef0b843db5bbd18aa38f08dc1",
+    "The scriber and clerk you are looking for..md": "fdd916a4149c9bced30e1250b091ed59322fd76c9e98469b834723b859f3e449",
+    "agents/openai.yaml": "4d56968c006c3a7899c50fb5735e4701743a9b81eaed73508bce326222344de5",
+    "references/documentation.md": "1321ae8e40d1c9f3ad7e68beca3f70450d9aeb9f5cbcc4ec81e3155adb984a2f",
+    "references/evidence.md": "49525f9974f8cdc989e365347d7bf8208e5075596aedda4438bb37b7530e245e",
+    "references/scanner.md": "80a29ca636a9b421204e197df442b38b177fa876086bd97f3e5f865b338c2111",
+    "scripts/amanuensis.py": "7e88c83dcca04ee609cd27209a4c6e0b15013864091532759b1caf60ac94710c",
+    "tests/test_amanuensis.py": "bb0af7f3e87820bbb627273da95701ca3dd8fbdc335f348caf37d8d4bb4d322e"
+  },
+  "gaps": [
+    "cross-platform-gap",
+    "external-app-gap",
+    "token-benchmark-gap",
+    "rendered-preview-gap"
+  ],
+  "documentation_sha256": "235483554fdebbc3d35128f607bd4a5c848bdf7f245ac7d768431c4f8a5d5c4c",
+  "evidence_sha256": "474dd9e4274efb7391c6cbf01ea7883c3f4350d9249c2bd8e216d122b568c1bf"
+}
